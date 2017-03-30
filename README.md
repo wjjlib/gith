@@ -1,7 +1,7 @@
 # gith
 
 
-##nodejs实现的简单接口
+## nodejs实现的简单接口
 
 var http = require('http');
 var mysql      = require('mysql');
