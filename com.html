@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			.active{
+				background-color: #000;
+			}
+        </style>
+    </head>
+
+    <body>
+    	<ul id="ul">
+    		<li class="active">eeeee</li>
+    		<li>ewwwwwwww</li>
+    		<li>ffffff</li>
+    		<li>vvvvvv</li>
+    		<li>vxxxxxxx</li>
+    	</ul>
+    </body>
+    <script>
+    var lis=document.querySelectorAll('li');
+    
+for(var i=0;i<lis.length;i++){
+	lis[i].onclick=function(){
+		for(var j=0;j<lis.length;j++){
+
+    		
+    		lis[j].className='';
+		}
+		this.className='active';
+    	};
+}
+
+    </script>
+</html>
