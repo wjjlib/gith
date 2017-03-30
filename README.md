@@ -3,6 +3,7 @@
 
 ## nodejs实现的简单接口
 
+<pre>
 var http = require('http');
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
@@ -46,3 +47,4 @@ server.on('close',function(){
     connection.end();
 });
 console.log('listening on port  9000');
+</pre>
