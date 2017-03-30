@@ -1,1 +1,162 @@
 
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .layout{
+
+        }
+        .banner img{
+            width: 100%;
+        }
+        nav{
+            padding:0 10px;
+        }
+        /*导航*/
+        nav .item{
+            height: 90px;
+            background-color: orangered;
+            margin:10px auto;
+            border-radius: 10px;
+            /*伸缩布局*/
+            display: flex;
+        }
+
+        .item .pub{
+            flex:1;
+            border-bottom: 1px solid #fff;
+        }
+        .item .sub{
+            flex:2;
+        }
+
+        .item .sub a{
+            float: left;
+            width: 50%;
+            height: 45px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 45px;
+            border-left:1px solid #fff;
+            border-bottom:1px solid #fff;
+            color:#fff;
+        }
+
+        .item:nth-child(2){
+            background-color: crimson;
+        }
+        .item:nth-child(3){
+            background-color:royalblue;
+        }
+        .item:nth-child(4){
+            background-color: olivedrab;
+        }
+
+        .item:nth-child(4) a{
+            width: 33.33%;
+        }
+
+        .extra {
+            display: flex;
+        }
+        .extra a{
+            flex:1;
+        }
+
+        .extra a img{
+            width: 100%;
+        }
+
+        .f-nav{
+            display: flex;
+            height: 50px;
+            border-top:1px solid #333;
+            border-bottom:1px solid #333;
+        }
+        .f-nav li{
+            flex:1;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .footer p{
+            text-align: center;
+            line-height: 40px;
+            color:#ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <!-- banner-->
+         <div class="banner">
+             <img src="images/banner001.jpg" alt=""/>
+         </div>
+        <!-- 导航-->
+        <nav class="nav">
+            <div class="item">
+                <div class="pub"></div>
+                <div class="sub">
+                    <a href="javascript:;">海外酒店</a>
+                    <a href="javascript:;">团购</a>
+                    <a href="javascript:;">特惠酒店</a>
+                    <a href="javascript:;">客栈公寓</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pub"></div>
+                <div class="sub">
+                    <a href="javascript:;">火车票</a>
+                    <a href="javascript:;">汽车票船票</a>
+                    <a href="javascript:;">国际机票</a>
+                    <a href="javascript:;">自驾专车</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pub"></div>
+                <div class="sub">
+                    <a href="javascript:;">攻略身边</a>
+                    <a href="javascript:;">邮轮</a>
+                    <a href="javascript:;">周末游</a>
+                    <a href="javascript:;">保险签证</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub">
+                    <a href="javascript:;">门票玩乐</a>
+                    <a href="javascript:;">美食</a>
+                    <a href="javascript:;">全球购</a>
+                    <a href="javascript:;">礼品卡</a>
+                    <a href="javascript:;">出境WIFI</a>
+                    <a href="javascript:;">更多</a>
+                </div>
+            </div>
+        </nav>
+
+        <!--  图片模块-->
+        <div class="extra">
+            <a href="#"><img src="images/extra_1.png" alt=""/></a>
+            <a href="#"><img src="images/extra_2.png" alt=""/></a>
+        </div>
+
+        <div class="footer">
+            <ul class="f-nav">
+                <li>下载</li>
+                <li>客户端</li>
+                <li>我的</li>
+            </ul>
+            <p>网站地图 | ENGLISH | 电脑版</p>
+            <p>©2015 携程旅行</p>
+        </div>
+    </div>
+</body>
+</html>
