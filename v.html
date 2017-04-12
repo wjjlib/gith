@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>vue双向数据绑定</title>
+<script src="vue.min.js"></script>
+</head>
+<body>
+<p><b>修改输入框的值，查看效果</b>：</p>
+<div id="app">
+  <p>{{message}}</p>
+  <p>{{message}}</p>
+  <!-- 字符串连接 -->
+  <p>{{ message  }}</p>
+  <!-- 字符串反转 -->
+  <p>{{ message.split('').reverse().join('') }}</p>
+  <input v-model="message">
+</div>
+</body>
+<script>
+  var vm=new Vue({
+    el:"#app",
+    data:{
+      message:"双向数据绑定"
+    }
+  })
+</script>
+</html>
